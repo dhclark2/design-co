@@ -2,7 +2,50 @@ html {
   text-size-adjust: 100%;
 }
 
+main {
+  max-width: 42em;
+  margin: auto;
+}
+
 body {
-  margin: 0;
+  margin: 100;
   font: 16px / 1 sans-serif;
+}
+
+div.rectangle {  /* why won't this rectangle appear? */
+  width: 900px;
+  height: 20px;
+}
+
+ul {
+
+  border-top:6px solid red;
+  background-color: lightgrey;
+  padding: 20px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+}
+
+section.middle div.picture {  /*Why does the column gap feature not make columns closer?  only works to spread them more.*/
+  columns: 2;
+  column-gap: 0;
+  width: auto;
+  height: auto;
+}
+
+section.bottom div.text {
+  display: flex;
+  justify-content: space-between;;
 }
